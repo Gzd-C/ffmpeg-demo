@@ -1,0 +1,21 @@
+.player-wrap {
+  max-width: 800px; 
+  max-height: 600px;
+
+}
+.player {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+}
+video {
+  content-visibility: visible;
+  display: block;
+  height: 100%;
+  margin: auto;
+  width: 100%;
+  background-color: black;
+  min-height: 600px;
+  min-width: 800px;
+}

@@ -1,0 +1,12 @@
+.divide-wrap {
+    display: flex;
+    
+}
+.divide-wrap .player1 {
+    margin-right: 60px;
+}
+.divide-uploader {
+    margin-top: 20px;
+    width: 300px;
+    display: flex;
+}
