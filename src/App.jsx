@@ -1,22 +1,18 @@
-import Navbar from "@/layout/Navbar/index";
-import routes from '@/routes';
 import { setFFmpeg } from '@/store/modules/common';
 import { createFFmpeg } from '@ffmpeg/ffmpeg';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { useRoutes } from 'react-router-dom';
-
 import './App.css';
+import EditorContainer from './layout/EditorContainer';
+import FileContainer from "./layout/FileContainer";
 
 function App() {
-
-  const router = useRoutes(routes)
 
   // 初始化ffmpeg
   const ffmpeg = createFFmpeg({
     // corePath: '../../public/ffmpeg-core.js',// 'https://unpkg.com/@ffmpeg/core@0.8.5/dist/ffmpeg-core.js',
     log: true,
-    progress: (log) => console.log("ffmpeglog", log)
+    progress: (progress) => console.log("progress", progress)
   })
 
   const initFFmpeg = async () => {
@@ -31,8 +27,8 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
-      {router}
+      <FileContainer />
+      <EditorContainer />
     </div>
   );
 }

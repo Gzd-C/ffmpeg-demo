@@ -1,5 +1,5 @@
 import Player from '@/components/Player/Player';
-import Uploader from '@/components/Uploader/Uploader';
+import Uploader from '@/components/Uploader2/Uploader';
 import { fetchFile } from '@ffmpeg/ffmpeg';
 import { Button, Input } from 'antd';
 import { useState } from 'react';

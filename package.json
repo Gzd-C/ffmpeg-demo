@@ -1,5 +1,5 @@
 {
-  "name": "wallpaper-demo",
+  "name": "ffmpeg-demo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,6 +24,7 @@
     "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
     "redux": "^5.0.1",
+    "sass": "^1.72.0",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
@@ -37,7 +38,10 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "rules": {
+      "semi": [0]
+    }
   },
   "browserslist": {
     "production": [

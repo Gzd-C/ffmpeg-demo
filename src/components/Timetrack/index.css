@@ -1,0 +1,45 @@
+.timeline {
+    margin-top: 30px;
+    margin-left: 40px;
+    cursor: pointer;
+    overflow: auto;
+    display: flex;
+}
+.timeline .scrubber {
+    background-color: #409eff;
+}
+.timeline .tick {
+    height: 15px;
+    font-size: 12px;
+    margin: 0 5px;
+}
+.timeline .tick-number {
+    height: 15px;
+    font-size: 12px;
+    margin: 0 5px;
+}
+.timeline .tick::after {
+    content: '|';
+    position: relative;
+    top: -10px;
+    left: -100%;
+    width: 1px;
+    height: 4px;
+    font-size: 12px;
+}
+.timeline .tick-number::after {
+    content: '|';
+    position: relative;
+    top: -10px;
+    width: 1px;
+    height: 4px;
+    font-size: 14px;
+}
+.ticks-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.number {
+    position: relative;
+    
+}

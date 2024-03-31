@@ -1,0 +1,10 @@
+.operation-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% + 60px);
+    margin-top: 30px;
+}
+.opration {
+    display: flex;
+    justify-content: space-evenly;
+}

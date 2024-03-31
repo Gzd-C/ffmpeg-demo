@@ -1,0 +1,13 @@
+.editor-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(100% - 520px);
+    height: 100%;
+}
+.editor {
+    height: 60%;
+    margin: 60px 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
